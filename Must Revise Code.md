@@ -45,3 +45,41 @@ void merge(int arr1[], int arr2[], int n, int m)
         sort(arr2,arr2+m);
 }
 ```
+
+### Q3.Rearrange Array Alternately
+
+>https://practice.geeksforgeeks.org/problems/-rearrange-array-alternately/0/?track=md-arrays&batchId=144
+
+```
+#include <iostream>
+#include<algorithm>
+using namespace std;
+int main() {
+	//code
+	int t;
+	cin>>t;
+	for(int i=0;i<t;i++)
+	{
+	    long int n;
+	    cin>>n;
+	    long int arr[n];
+	    for(long int j=0;j<n;j++)
+	    {
+	        cin>>arr[j];
+	    }
+	    for(long int j=0;j<n/2;j++)
+	    {
+	        cout<<arr[n-1-j]<<" "<<arr[j]<<" ";
+	    }
+	    if(n%2!=0)
+	    {
+	        cout<<arr[n/2];
+	    }
+	    
+	    cout<<endl;
+	}
+	return 0;
+}
+
+```
+### Q4. 
